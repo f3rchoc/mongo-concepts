@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  mongodb: # we can any name
+    image: mongo:6.0 # mongo image version
+    ports:
+      - 27017:27017 # it's important not change this port
+    environment: # check documentation at docker hub
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - ./mongo_data:/data/db
