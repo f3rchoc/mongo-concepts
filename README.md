@@ -1,2 +1,3 @@
 # mongo-concepts
-Mongo DB concepts
+
+Project to learn mongoDB query language
